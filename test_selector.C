@@ -105,7 +105,7 @@ void test_selector::Terminate()
    // the results graphically or save the results to file.
 
 hist->Draw();
-TFile selector_output("selectoroutput.root", "recreate");
+TFile selector_output("/Users/rupeshdotel/analysis/work/pi0pippimeta/codes/selectoroutput.root", "recreate");
 
 hist->Write();
 selector_output.Close();
